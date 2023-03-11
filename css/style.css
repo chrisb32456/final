@@ -1,0 +1,240 @@
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+/* ------ FONTS ------ */
+
+@font-face {
+font-family: "ultra";
+src: url('../fonts/serif/ultra-regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "roboto";
+src: url('../fonts/sans/robotoslab-regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "lato";
+src: url('../fonts/sans/lato-regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+/* ------ TYPOGRAPHY ------ */
+
+p {
+font-family: roboto, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+font-family: lato, Helvetica, sans-serif;
+letter-spacing: 0.025rem;
+}
+
+h1 {
+font-size: 3rem;
+letter-spacing: 0.25rem;
+transform: rotate(-5deg);
+}
+
+.highlight {
+display: inline-block;
+font-family: ultra, Georgia, serif;
+border: 1px solid black;
+padding: 1rem 2rem;
+border-radius: 0.3rem;
+border-top-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+color: #fffefd;
+background-color: #B2BF50;
+box-shadow: 5px 5px 4px -1px #488;
+}
+
+button {
+  display: inline-block;
+  font-family: ultra, Georgia, serif;
+  border: 1px solid black;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: #fffefd;
+  background-color: #B2BF50;
+  box-shadow: 9px 9px 6px -3px #488;
+  cursor: pointer;
+}
+
+.blog-link {
+  display: inline-block;
+  font-family: ultra, Georgia, serif;
+  border: 1px solid black;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: #fffefd;
+  background-color: #B2BF50;
+  box-shadow: 9px 9px 6px -3px #488;
+  transform: rotate(-10deg);
+  text-decoration: line-through;
+ }
+
+
+
+/* ------ GENERAL SETUP AND DEFAULTS ------ */
+
+{
+box-sizing: border-box;
+}
+html {
+font-size: 16px;
+}
+
+body {
+margin: 1.5rem auto;
+width: 90%;
+max-width: 56.25rem; /* changed from min-width to max-width */
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-section h2 {
+  margin-bottom: 20px;
+}
+
+/* ------ LAYOUT ------ */
+
+header {
+padding: 0.5rem 0rem 1rem 0rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav {
+margin-top: 3rem;
+}
+
+.main section {
+display: grid;
+grid-template-columns: 4fr 1fr;
+grid-gap: 1rem;
+}
+
+article {
+grid-column: 1 / 2;
+grid-row: 1;
+}
+
+aside {
+grid-column: 2 / 3;
+grid-row: 1;
+border-left: 1px solid #2834B5;
+padding: 0.75rem;
+}
+
+aside p {
+grid-column: 2 / 3;
+grid-row: 1;
+border-left: 1px solid #2834B5;
+padding: 0.5rem;
+}
+
+aside {
+  width: 25%;
+  float: right;
+  margin-left: 20px;
+}
+
+aside h3 {
+  font-size: 1.2em;
+  margin-top: 1.5em;
+}
+
+aside figure {
+  margin: 0;
+}
+
+aside img {
+  max-width: 100%;
+  height: auto;
+}
+
+aside figcaption {
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+
+.subsection {
+display: flex;
+margin: 1.5rem 0rem; /* increased margin from 1rem to 1.5rem */
+}
+
+.subsection figure {
+margin: 0rem 1.5rem; /* increased margin from 1rem to 1.5rem */
+background-color: #F2E4C9;
+}
+
+.subsection figure figcaption {
+padding: 0.5rem 0.5rem;
+}
+
+/* ------ IMAGES AND FIGURES ------ */
+
+img {
+width: 100%;
+}
+
+figure {
+margin: 0px;
+}
+
+.article-image {
+width: 33%;
+float: left;
+margin-right: 0.75rem;
+}
+
+/* ------ LINKS AND NAVIGATION ------ */
+
+a {
+text-decoration: none;
+}
+
+nav a {
+display: inline-block;
+	  padding: 1.25rem 2rem;
+      font-size: 1.5rem;
+	  font-family: lato,Arial, sans-serif;
+ }
+ 
+ nav a {
+  display: inline-block;
+  padding: 1.25rem 2rem;
+  font-size: 1.5rem;
+  font-family: lato, Arial, sans-serif;
+}
+
